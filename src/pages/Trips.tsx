@@ -1,9 +1,22 @@
 import React from "react";
+import CollageComponent from "../components/Layout/Collage/CollageComponent.tsx";
 
 const Trips: React.FC = () => {
-    return(
-        <div>Talk About trips we've done</div>
-    )
+    const images = [
+        "./assets/background.jpg",
+        "./assets/background.jpg",
+        "./assets/background.jpg",
+        "./assets/background.jpg"
+    ];
+
+    return (
+        <CollageComponent
+            title="Trip #1"
+            content="Here is a blog post about the trip. Itinerary, best wipeouts, etc"
+            images={images}
+        />
+    );
+
 } 
 
 export default Trips;
